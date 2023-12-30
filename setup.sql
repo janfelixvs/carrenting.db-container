@@ -18,7 +18,7 @@ CREATE TABLE car (
 );
 
 CREATE TABLE customer (
-    customerID INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(255) ,
     last_name VARCHAR(255)  ,
     email VARCHAR(255)   UNIQUE,
@@ -59,4 +59,6 @@ CREATE TABLE gps_tracking (
     location TEXT ,
     FOREIGN KEY (carID) REFERENCES car(carID)
 );
+
+SET GLOBAL FOREIGN_KEY_CHECKS=0;
 
