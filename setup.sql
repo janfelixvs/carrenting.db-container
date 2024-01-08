@@ -40,6 +40,7 @@ CREATE TABLE maintenance (
     carID INT  ,
     start_date DATETIME,
     end_date DATETIME,
+    status VARCHAR(255) ,
     FOREIGN KEY (carID) REFERENCES car(carID)
 );
 
