@@ -58,7 +58,7 @@ CREATE TABLE gps_tracking (
     carID INT,
     timestamp DATETIME ,
     location TEXT ,
-    FOREIGN KEY (carID) REFERENCES car(carID)
+    FOREIGN KEY (carID) REFERENCES car(carID) ON DELETE CASCADE
 );
 
 SET GLOBAL FOREIGN_KEY_CHECKS=0;
